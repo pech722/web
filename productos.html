@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Catalogo de Productos</title>
+
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="imagen/logo 3.png"></a>
+        <h1>Barro Artesanal</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="quienessomos.html">Quienes Somos</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de contenido principal-->
+    <main>
+        <h1>Catalogo de Productos</h1>
+        <div class="catalogo">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="casuela con tapa.jpg" alt="Producto 1">
+                <div class="producto-info">
+                    <h2>Cazuela</h2>
+                    <p>Cazuelas de barro con tapa para 2 litros o 1 kg de capacidad pot, 3 piezas</p>
+                    <p class="precio">$899.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="jarritos.jpg" alt="Producto 2">
+                <div class="producto-info">
+                    <h2>Cantaritos de Barro</h2>
+                    <p>Cantaritos de Barro, Juego de 2 autenticas tazas de Barro esmaltada de 14 onzas, Jarritos de Barro, Vasos de Barro</p>
+                    <p class="precio">$205.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="indigo.jpg" alt="Producto 3">
+                <div class="producto-info">
+                    <h2>Paquete de Articulos de Barro</h2>
+                    <p>Vajilla de platos y vasos para 4 personas de barro artesanal hecha a mano, para fiestas mexicanas y altar de Dia de muertos, Capulineado pintado a mano, artesania tradicional de alfareria de uso diario, 24 piezas, incluye salsera y molcajete</p>
+                    <p class="precio">$2,990.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="producto">
+                <img src="cantarito.jpg" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Cantarito</h2>
+                    <p>Cantarito de barro con vaso contenedor para agua botellon almacena 4.5 litros agua cantaro tradicional</p>
+                    <p class="precio">$259.00</p>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto">
+                <img src="plato.jpg" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Platos de Barro</h2>
+                    <p>Platos planos de barro de 22 cm de diametro taquizas - 8 piezas</p>
+                    <p class="precio">$599.00</p>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="producto">
+                <img src="ollas.jpg" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Olla de Barro</h2>
+                    <p>Olla chata de barro con tapa para 7 litros o 3.5 kg de capacidad, olla cazuela chocolate frijoles pot</p>
+                    <p class="precio">$399.00</p>
+                </div>
+            </div>
+            <!-- Producto 7 -->
+            <div class="producto">
+                <img src="cantaros.jpg" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Jarritos</h2>
+                    <p>Cantaritos de Barro Jarritos, Juego de 2 tazas de barro, 14 onzas, para bebidas Micheladas, Margaritas y Tequila, especial para tacos, maresdas y fiestas mexicanas</p>
+                    <p class="precio">$159.00</p>
+                </div>
+            </div>
+            <!-- Producto 8 -->
+            <div class="producto">
+                <img src="cazuela.jpg" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Cazuela de Barro</h2>
+                    <p>Cazuela de barro con tapa para 2 litros o 1 kg de capacidad pot, 1 pieza</p>
+                    <p class="precio">$199.00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Barro Artesanal. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/profile.php?id=61573886608274&sk=mentions" target="_blank">Facebook</a> |
+             <a href="https://x.com/ArtesanalB6229/with_replies" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/arte_sanla/" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: barroartesanal12@gmail.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>

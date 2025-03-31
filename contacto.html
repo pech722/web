@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Pagina de Contacto</title>
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="imagen/logo 2.png"></a>
+        <h1>Barro Artesanal</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="quienessomos.html">Quienes Somos</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de contenido principal-->
+    <main>
+        <h1>Contactanos</h1>
+        <div class="contacto">
+            <!-- Formulario de contacto -->
+            <div class="formulario-contacto">
+                <h2>Envianos un mensaje</h2>
+                <form action="#" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+    
+            <!-- Informacion de contacto -->
+            <div class="info-contacto">
+                <h2>Visitanos</h2>
+                <p>Direccion: Cardenas Tab. Poblado C-10, calle 6 y 7 (86476)</p>
+                <p>Telefono: 937-153-7903</p>
+                <p>Email: barroartesanal12@gmail.com</p>
+    
+                <!-- Google Maps -->
+
+                <iframe class="mapa"
+ 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.107434199873!2d-
+93.5794!3d17.9167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+1s0x858c3f9e4f6c2bfb%3A0x7f0d6d9f1a7e4f7d!2sPoblado%20C-10%2C%20C%C3%A1rdenas%2C
+%20Tabasco%2C%20M%C3%A9xico!5e0!3m2!1ses!2sus!4v1615914439638!5m2!1ses!2sus"
+ 
+    allowfullscreen=""
+ 
+    loading="lazy"
+ 
+    width="600"
+ 
+    height="450">
+</iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Barro Artesanal. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/profile.php?id=61573886608274&sk=mentions" target="_blank">Facebook</a> |
+            <a href="https://x.com/ArtesanalB6229/with_replies" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/arte_sanla/" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: barroartesanal12@gmail.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+      </script>
+</body>
+</html>

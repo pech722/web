@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina WEB</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="imagen/logo.png"></a>
+        <h1>Barro Artesanal</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="quienessomos.html">Quienes Somos</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de contenido principal-->
+    <main>
+        <!-- Sección de la empresa -->
+        <section id="empresa" class="columnas">
+            <div class="izquierda">
+                <img src="somos.png" alt="quienes_somos">
+            </div>
+            <div class="derecha">
+                <h2>Nuestra Empresa</h2>
+                <p>En Barro Artesanal, nos dedicamos a la creacion y venta de barros artesanales que capturan la esencia de nuestras tradiciones culturales y el arte de la alfareria.<p/>
+<p>Nuestra mision es ofrecer productos unicos y de alta calidad que no solo embellecen los espacios de nuestros clientes, sino que tambien cuentan historias de creatividad y herencia.</p> 
+<p>Nos comprometemos a trabajar con materiales sostenibles y tecnicas tradicionales, apoyando a los artesanos locales y fomentando un comercio justo. A traves de nuestra pasion por el arte del barro, buscamos inspirar a las personas a valorar la utenticidad y la belleza en lo cotidiano.</p>    
+            </div>
+        </section>
+
+        <!-- Sección de Promociones -->
+        <section id="promocion">
+            <h2>PROMOCIONES</h2>
+            <div class="catalogo">
+                <!-- promocion 1 -->
+                <div class="producto">
+                    <img src="olla.jpg" alt="Producto 1">
+                    <div class="producto-info">
+                        <h2>Promocion Especial!</h2>
+                        <p>Cazuelas de barro con tapa para 2 litros o 1 kg de capacidad, 1 pieza</p>
+                        <p>$290.00</p>
+                    </div>
+                </div>
+                <!-- promocion 2 -->
+                <div class="producto">
+                    <img src="olla chata.jpg" alt="Producto 2">
+                    <div class="producto-info">
+                        <h2>Promocion Especial!</h2>
+                        <p>Olla Frijolera De Barro con tapa 5.5 cuartos Canterito Cazuela - Cazuela tradicional floral decorativa artesanal</p>
+                        <p>$181.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Servicios y Precios -->
+        <section id="servicios" class="columnas">
+            <div class="izquierda">
+                <h2>Productos/Precios</h2>
+                <ul>
+                    <li>Platos <p>desde: $30 hasta: $120</p></li>
+                    <li>Cazuelas <p>desde: $250 hasta: $600</p></li>
+                    <li>Ollas <p>desde: $230 hasta: $760</p></li>
+                    <li>Tazas <P>desde: $25 hasta: $155</p></li>
+                    <li>Comales <p>desde: $50 hasta: $230</p></li>
+                    <!-- Agregar más servicios según sea necesario -->
+                </ul>
+            </div>
+            <div class="derecha">
+                <img src="articulos.jpg" width="500" heigth="350"/> <alt="Servicio">
+            </div>
+        </section>
+
+<!-- Sección de Video -->
+<section id="video">
+    <h2>CONOCE NUESTRO PROCESO ARTESANAL</h2>
+    <video width="600" controls>
+        <source src="proceso artesanal.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+    </video>
+</section>
+
+        <!-- Sección de Marcas -->
+        <section id="marcas">
+            <h2>Nuestra Marca</h2>
+            <div class="brands">
+                <img src="2.png" width="500" heigth="350"/> <alt="marca1">
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Barro Artesanal. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/profile.php?id=61573886608274&sk=mentions" target="_blank">Facebook</a> |
+            <a href="https://x.com/ArtesanalB6229/with_replies" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/arte_sanla/" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: barroartesanal12@gmail.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+      </script>
+</body>
+</html>

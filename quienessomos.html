@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de la Empresa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("activo");
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <a href="index.html" class="logo"><img src="imagen/logo.png"  <alt="Logo de la empresa"></a>
+        <h1>Barro Artesanal</h1>
+
+        <!-- Menú de navegación -->
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de la empresa -->
+    <main>
+        <section id="empresa" class="contenedor">
+            <div class="izquierda">
+                <img src="somos.png" width="300" height="300"/> <alt="Imagen de la empresa">
+            </div>
+            <div class="derecha">
+                <h2>Sobre Nosotros</h2>
+                <p>En <strong>Barro Artesanal</strong>, <p> nos dedicamos a la creacion y venta de barros artesanales que capturan la esencia de nuestras tradiciones culturales y el arte de la alfareria.<p/>
+<p>Nuestra mision es ofrecer productos unicos y de alta calidad que no solo embellecen los espacios de nuestros clientes, sino que tambien cuentan historias de creatividad y herencia.</p> 
+<p>Nos comprometemos a trabajar con materiales sostenibles y tecnicas tradicionales, apoyando a los artesanos locales y fomentando un comercio justo. A traves de nuestra pasion por el arte del barro, buscamos inspirar a las personas a valorar la utenticidad y la belleza en lo cotidiano.</p> 
+            </div>
+        </section>
+
+        <!-- Misión, Visión y Valores -->
+        <section id="info-empresa">
+            <div class="info-box">
+                <h2>Mision</h2>
+                <p>Nos dedicamos a la creacion y comercializacion de articulos de barro artesanales, fusionando tradicion, creatividad y calidad en cada pieza.</p> <p> Valoramos y promovemos el trabajo de nuestros artesanos locales, preservando tecnicas ancestrales y fomentando el comercio justo.</p> <p> Nuestra mision es ofrecer productos autenticos, sostenibles y llenos de historia, que conecten a nuestros clientes con la riqueza cultural de la ceramica artesanal.</p> <p> Buscamos inspirar el aprecio por el arte hecho a mano, aportando belleza y calidez a los hogares, mientras contribuimos al desarrollo de nuestras comunidades y al respeto por el medioambiente.</p>
+            </div>
+            <div class="info-box">
+                <h2>Vision</h2>
+                <p>Ser la empresa lider en la comercializacion de articulos de barro artesanales, reconocida por la calidad, autenticidad y belleza de nuestras piezas.</p> <p> Aspiramos a expandir el alcance de la ceramica tradicional, llevando el arte de nuestros artesanos a nuevos mercados nacionales e internacionales.</p> <p> Nos esforzamos por innovar sin perder nuestras raices, promoviendo practicas sostenibles y fortaleciendo el comercio justo.</p> <p> Queremos ser un motor de desarrollo para las comunidades artesanales, preservando su legado cultural y asegurando que cada pieza cuente una historia unica, llena de tradicion y pasion.</p>
+            </div>
+            <div class="info-box">
+                <h2>Valores</h2>
+                <ul>
+                    <li>Calidad</li>
+                    <li>Tradicion</li>
+                    <li>Sostenibilidad</li>
+                    <li>Compromiso</li>
+                    <li>Innovacion</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Barro Artesanal. Todos los derechos reservados.</p>
+        <p>Contacto: barroartesanal12@gmail.com</p>
+    </footer>
+
+</body>
+</html>
