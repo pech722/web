@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Encabezado */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    height: 80px;
+}
+
+/* Menú de navegación */
+.navbar {
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #d9534f;
+    border-radius: 5px;
+}
+
+/* Icono hamburguesa (oculto en escritorio) */
+.icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Sección de la empresa */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.izquierda, .derecha {
+    flex: 1;
+    min-width: 300px;
+}
+
+.izquierda img {
+    max-width: 100%;
+    height: auto;
+}
+
+.derecha h2 {
+    color: #d9534f;
+    margin-bottom: 15px;
+}
+
+/* Misión, Visión y Valores */
+#info-empresa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.info-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.info-box h2 {
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-box ul li {
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: #333;
+        width: 200px;
+        top: 100%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .menu.activo {
+        display: flex;
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .icon {
+        display: block;
+    }
+}
